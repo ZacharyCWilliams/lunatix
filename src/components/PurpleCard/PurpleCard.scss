@@ -31,8 +31,30 @@
   padding-left: 32px;
   font-size: 30px;
   font-family: 'PT Sans Narrow', sans-serif;
+  color: rgb(35, 4, 20);
 }
 
 .purple-cards {
   display: flex;
+}
+
+.view-all-btn {
+  width: 160px;
+  height: 60px;
+  border-radius: 34px;
+  background-color:rgb(102, 153, 8);
+  border: 3px solid rgb(189, 189, 189);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  align-self: center;
+  outline: none;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.view-all-btn:hover {
+  border: 3px solid white;
+  background-color: rgb(75, 172, 74);
+  cursor: pointer;
 }
