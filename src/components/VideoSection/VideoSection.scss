@@ -1,0 +1,21 @@
+.video-section-container {
+  height: 700px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drive-in-image {
+  height: 500px;
+  justify-content: center;
+  align-self: center;
+}
+
+.learn-more-button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 50px;
+  margin-bottom: 50px;
+}

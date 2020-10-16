@@ -1,0 +1,50 @@
+// mobile breakpoints
+
+//tablet breakpoints
+
+//desktop breakpoints
+
+.navbar-container {
+  display: flex;
+  height: 95px;
+  justify-content: space-between;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.main-navigation {
+  display: flex;
+}
+
+.main-nav-link {
+  font-size: 30px;
+  font-weight: 700;
+  color: #6f6f6f;
+  padding: 0px 40px;
+  text-decoration: none;
+  align-self: center;
+}
+
+.logo-image {
+  height: 70px;
+  padding-left: 30px;
+  padding-top: 6px;
+}
+
+.my-tickets-section {
+  padding-right: 30px;
+  font-size: 30px;
+  align-self: center;
+  color: #6f6f6f;
+  font-weight: 700;
+  display: flex;
+}
+
+.profile-icon {
+  color: #6f6f6f;
+  align-self: center;
+}
+
+.ticket-h2 {
+  font-size: 30px;
+  padding-right: 5px;
+}
