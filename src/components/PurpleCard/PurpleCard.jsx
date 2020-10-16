@@ -12,10 +12,10 @@ export default function PurpleCard() {
         <img src={ViewAllBtn} alt="View All"/>
       </div>
       <div className="purple-cards">
-        <CardMaroon title="Event 1" color="#690d3e" />
-        <CardMaroon title="Event 2" color="#230414"  />
-        <CardMaroon title="Event 3" color="#a34176"  />
-        <CardMaroon title="Event 4" color="#ba7099"  />
+        <CardMaroon title="EVENT 1" color="#690d3e" />
+        <CardMaroon title="EVENT 2" color="#230414"  />
+        <CardMaroon title="EVENT 3" color="#a34176"  />
+        <CardMaroon title="EVENT 4" color="#ba7099"  />
       </div>
     </section>
   )
