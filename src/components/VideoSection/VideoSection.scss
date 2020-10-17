@@ -12,10 +12,25 @@
   align-self: center;
 }
 
-.learn-more-button {
-  border: none;
-  background-color: transparent;
+
+.learn-more-btn {
+  margin-top: 20px;
+  width: 160px;
+  height: 60px;
+  border-radius: 34px;
+  background-color:rgb(102, 153, 8);
+  border: 3px solid rgb(189, 189, 189);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  align-self: center;
   outline: none;
-  height: 50px;
-  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.learn-more-btn:hover {
+  border: 3px solid white;
+  background-color: rgb(75, 172, 74);
+  cursor: pointer;
 }

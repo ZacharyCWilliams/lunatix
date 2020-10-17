@@ -7,9 +7,10 @@ export default function VideoSection() {
   return (
     <section className="video-section-container">
       <img src={DriveInConcert} alt="drive-in-concert" className="drive-in-image" />
-      <button className="learn-more-button">
+      {/* <button className="learn-more-button">
         <img src={LearnMore} alt="learn-more"/>
-      </button>
+      </button> */}
+      <button class="learn-more-btn">Learn More</button>
     </section>
   )
 }

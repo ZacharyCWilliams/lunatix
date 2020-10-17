@@ -1,4 +1,80 @@
 .footer-container {
-  width: 500px;
-  background-color: black;
+  height: 600px;
+  background-color: #3a3737;
+}
+
+.app-store-container {
+  display: flex;
+  justify-content: center;
+}
+
+.app-store-button {
+  margin: 50px 20px;
+  border-radius: 7px;
+}
+
+.footer-search-bar {
+  width: 800px;
+  margin-top: 30px;
+}
+
+.footer-links {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  font-family: 'PT Sans Narrow', sans-serif;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.venmo {
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin-top: 40px;
+  font-size: 25px;
+}
+
+.venmo-header {
+  margin-top: 0px;
+}
+
+.venmo-paragraph {
+  margin-bottom: 0px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin-top: -20px;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding: 10px;
+}
+
+.footer-seperator {
+  margin-top: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.icon-circle {
+  padding: 10px 10px;
+  border: 1px solid white;
+  border-radius: 100px;
+  margin: -5px 10px;
 }

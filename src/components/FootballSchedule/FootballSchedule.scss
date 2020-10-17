@@ -1,0 +1,41 @@
+.football-container {
+  height: 700px;
+  display: flex;
+}
+
+.game-li {
+  border-bottom: 1px solid black;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  height: 75px; 
+}
+
+.game-name {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'PT Sans Narrow', sans-serif;
+  align-self: center;
+}
+
+.game-price-section {
+  display: flex;
+}
+
+.game-price {
+  align-self: center;
+  padding: 10px;
+}
+
+.game-price-number {
+  font-size: 25px;
+  font-weight: 800;
+  align-self: center;
+}
+
+.placeholder-ad {
+  height: 700px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(184, 182, 178);
+}
