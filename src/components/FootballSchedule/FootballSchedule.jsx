@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import "./FootballSchedule.scss";
+import Slider from "../../assets/slider-range.png";
+
 
 export default function FootballSchedule() {
 
   const [games, setGames] = useState();
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(10);
+  const [gamesPerPage, setGamesPerPage] = useState(16);
 
   let settings = { 
     "async": true,
@@ -30,7 +32,10 @@ const loadGames = async() => {
   
   let schedule;
   if (games) {
-    schedule = games.data.map(game => {
+    const lastGameIdx = currentPage * gamesPerPage
+    const firstGameIdx = lastGameIdx - gamesPerPage
+    const currentGames = games.data.slice(firstGameIdx, lastGameIdx)
+    schedule = currentGames.map(game => {
     return (
       <li className="game-li">
         <h2 className="game-name">
@@ -45,19 +50,27 @@ const loadGames = async() => {
   })
   }
 
-  // const lastGameIdx = currentGame * gamesPerPage
-  // const firstGameIdx = indexOfLastGame - gamesPerPage
-  // const currentGames = games.slice(firstGameIdx, lastGameIdx)
+
   
   console.log(games)
 
   return (
     <section className="football-container">
-      <section>
-        {schedule}
-      </section>
-      <section className="placeholder-ad">
-      
+      {/* <section className="football-schedule-filters">
+        
+      </section> */}
+      <section className="football-schedule">
+        <div className="fb-buttons-section">
+          <button className="filter-btn">By Team</button>
+          <button className="filter-btn">By Game</button>
+          <img className="filter-slider" src={Slider} alt="slider"/>
+        </div>
+        <div className="bottom-container-football-schedule">
+          <div className="football-section-div">{schedule}</div>
+          <section className="placeholder-ad">
+            <h2 className="placeholder-h2-football-section">PLACEHOLDER FOR PROMOTIONAL MESESAGING</h2>
+          </section>
+        </div>
       </section>
     </section>
   )
