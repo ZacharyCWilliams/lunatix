@@ -20,6 +20,26 @@ export default function FootballSchedule() {
     } 
   }
 
+const fiveGames = () => {
+  setGamesPerPage(5)
+}
+
+const tenGames = () => {
+  setGamesPerPage(10)
+}
+
+const allGames = () => {
+  setGamesPerPage(16)
+}
+
+const nextPage = () => {
+  setCurrentPage(currentPage + 1)
+}
+
+const previousPage = () => {
+  if (currentPage !== 1) setCurrentPage(currentPage - 1)
+}
+
 const loadGames = async() => {
   await fetch("https://free-nba.p.rapidapi.com/teams?page=0", settings)
   .then(res => res.json()).then(data => setGames(data))
@@ -50,15 +70,8 @@ const loadGames = async() => {
   })
   }
 
-
-  
-  console.log(games)
-
   return (
     <section className="football-container">
-      {/* <section className="football-schedule-filters">
-        
-      </section> */}
       <section className="football-schedule">
         <div className="fb-buttons-section">
           <button className="filter-btn">By Team</button>
@@ -68,8 +81,15 @@ const loadGames = async() => {
         <div className="bottom-container-football-schedule">
           <div className="football-section-div">{schedule}</div>
           <section className="placeholder-ad">
-            <h2 className="placeholder-h2-football-section">PLACEHOLDER FOR PROMOTIONAL MESESAGING</h2>
+            <h2 className="placeholder-h2-football-section">PLACEHOLDER FOR PROMOTIONAL MESSAGING</h2>
           </section>
+        </div>
+        <div className="sports-buttons-section">
+          <button className="sports-btn" onClick={() => previousPage()}>Previous</button>
+          <button className="sports-btn"  onClick={() => nextPage()}>Next</button>
+          <button className="sports-btn"  onClick={() => fiveGames()}>5</button>
+          <button className="sports-btn"  onClick={() => tenGames()}>10</button>
+          <button className="sports-btn"  onClick={() => allGames()}>All</button>
         </div>
       </section>
     </section>

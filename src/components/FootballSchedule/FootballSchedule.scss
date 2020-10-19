@@ -1,5 +1,5 @@
 .football-container {
-  height: 800px;
+  height: 850px;
   display: flex;
   flex-direction: column;
 }
@@ -74,6 +74,7 @@
 
 .bottom-container-football-schedule {
   display: flex;
+  margin-bottom: -50px;
 }
 
 .football-section-div {
@@ -97,4 +98,24 @@
   display: flex;
   margin-left: 100px;
   margin-top: 20px; 
+}
+
+.sports-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #656363;
+  outline: none;
+  color: white;
+  margin: 0px 20px;
+}
+
+.sports-btn:hover {
+  background-color: #393737;
+  border: 1px solid black;
+}
+
+.sports-buttons-section {
+  display: flex;
+  margin-left: 20px;
 }
